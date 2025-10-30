@@ -6,17 +6,17 @@ pipeline {
         jdk 'jdk-17'
     }
 
-    parameters {
+    //parameters {
         // DockerHub 사용자명 입력
-        string(name: 'DOCKERHUB_USERNAME',  defaultValue: '', description: 'woojoosocute')
+        //string(name: 'DOCKERHUB_USERNAME',  defaultValue: '', description: 'woojoosocute')
         // GitHub  사용자명 입력
-        string(name: 'GITHUB_USERNAME',  defaultValue: '', description: 'woojoosocute')
-    }
+        //string(name: 'GITHUB_USERNAME',  defaultValue: '', description: 'woojoosocute')
+    //}
 
     environment {
         // 전역값을 넣어 두시면 위 parameters 입력이 필요 없어요. (전체 Jenkinfile에서 해당 내용을 모두 수정해 놓으면 좋습니다.)
-        // DOCKERHUB_USERNAME = ""
-        // GITHUB_USERNAME = ""
+         DOCKERHUB_USERNAME = "woojoosocute"
+         GITHUB_USERNAME = "woojoosocute"
 
         // 아래 부분 수정(x)
         GITHUB_URL = "https://github.com/${GITHUB_USERNAME}/kubernetes-anotherclass-sprint2.git"
