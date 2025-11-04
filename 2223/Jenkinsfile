@@ -16,8 +16,8 @@ pipeline {
     }
 
     environment {
-        // DOCKERHUB_USERNAME = ""
-        // GITHUB_USERNAME = ""
+         DOCKERHUB_USERNAME = "woojoosocute"
+         GITHUB_USERNAME = "woojoosocute"
 
         // 아래 부분 수정(x)
         GITHUB_URL = "https://github.com/${GITHUB_USERNAME}/kubernetes-anotherclass-sprint2.git"
